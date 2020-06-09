@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HamzaWindowsFormsPartC.Unit6;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,8 +19,9 @@ namespace WindowsFormsPartC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
-            Application.Run(new MenuForm());
+
+            //Application.Run(new MenuForm());
+            Application.Run(new HouseForm());
         }
     }
 }

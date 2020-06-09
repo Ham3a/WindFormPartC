@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DerekWindowsFormsPartC.Properties {
+namespace HamzaWindowsFormsPartC.Properties {
     using System;
     
     

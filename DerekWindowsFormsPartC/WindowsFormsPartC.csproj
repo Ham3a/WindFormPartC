@@ -79,6 +79,12 @@
     <Compile Include="Unit6\GraphicsForm2.Designer.cs">
       <DependentUpon>GraphicsForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit6\HouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit6\HouseForm.Designer.cs">
+      <DependentUpon>HouseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit7\SketchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Unit6\GraphicsForm2.resx">
       <DependentUpon>GraphicsForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit6\HouseForm.resx">
+      <DependentUpon>HouseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit7\SketchForm.resx">
       <DependentUpon>SketchForm.cs</DependentUpon>
