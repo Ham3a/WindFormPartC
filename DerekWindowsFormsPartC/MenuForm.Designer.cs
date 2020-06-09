@@ -71,12 +71,10 @@
             // flyMeRadioButton
             // 
             this.flyMeRadioButton.AutoSize = true;
-            this.flyMeRadioButton.Checked = true;
             this.flyMeRadioButton.Location = new System.Drawing.Point(48, 105);
             this.flyMeRadioButton.Name = "flyMeRadioButton";
             this.flyMeRadioButton.Size = new System.Drawing.Size(337, 30);
             this.flyMeRadioButton.TabIndex = 3;
-            this.flyMeRadioButton.TabStop = true;
             this.flyMeRadioButton.Text = "Task 5.3 Fly With Me Animation";
             this.flyMeRadioButton.UseVisualStyleBackColor = true;
             this.flyMeRadioButton.CheckedChanged += new System.EventHandler(this.flyMeRadioButton_CheckedChanged);
@@ -94,10 +92,12 @@
             // graphicsRadioButton
             // 
             this.graphicsRadioButton.AutoSize = true;
+            this.graphicsRadioButton.Checked = true;
             this.graphicsRadioButton.Location = new System.Drawing.Point(48, 155);
             this.graphicsRadioButton.Name = "graphicsRadioButton";
             this.graphicsRadioButton.Size = new System.Drawing.Size(180, 30);
             this.graphicsRadioButton.TabIndex = 5;
+            this.graphicsRadioButton.TabStop = true;
             this.graphicsRadioButton.Text = "Unit 6 Graphics";
             this.graphicsRadioButton.UseVisualStyleBackColor = true;
             this.graphicsRadioButton.CheckedChanged += new System.EventHandler(this.graphicsRadioButton_CheckedChanged);

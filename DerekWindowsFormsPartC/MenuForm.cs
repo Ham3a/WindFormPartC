@@ -30,7 +30,7 @@ namespace WindowsFormsPartC
             else if (graphicsRadioButton.Checked)
             {
                 // Tasks 6.1 to 6.6
-                GraphicsForm2 form = new GraphicsForm2();
+                GraphicsForm form = new GraphicsForm();
                 form.Show();
             }
         }

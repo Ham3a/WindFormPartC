@@ -21,7 +21,7 @@ namespace WindowsFormsPartC.Unit6
     /// including rectangles, ellipses, polygons and lines.
     /// 
     /// Unit 6: Tasks 6.1 to 6.5
-    /// Derek Peacock
+    /// Hamza Basharat
     /// </summary>
     public partial class GraphicsForm : Form
     {
@@ -140,12 +140,12 @@ namespace WindowsFormsPartC.Unit6
         {
             int fontSize = 30;
             Font myFont = new Font("Courier", fontSize);
-            BackColor = Color.Yellow;
+            BackColor = Color.Green;
 
             for(int i = 1; i <= 6; i++)
             {
                 g.Clear(BackColor);
-                g.DrawString("Derek's Graphics Drawing", myFont, Brushes.Red, x, y);
+                g.DrawString("Hamza's Graphics Drawing", myFont, Brushes.Blue, x, y);
 
                 System.Threading.Thread.Sleep(200);
                 y = y + fontSize;
@@ -156,11 +156,11 @@ namespace WindowsFormsPartC.Unit6
         {
             w = 300; h = 200; int size = 20;
 
-            Pen myPen = new Pen(Color.Blue, 10);
+            Pen myPen = new Pen(Color.Red, 10);
 
             g.DrawRectangle(myPen, x, y, w, h);
-            g.FillRectangle(Brushes.Red, x, y, w, h);
-            g.FillEllipse(Brushes.Yellow, x, y, w, h);
+            g.FillRectangle(Brushes.Black, x, y, w, h);
+            g.FillEllipse(Brushes.White, x, y, w, h);
 
             y = 300;
 
@@ -182,7 +182,7 @@ namespace WindowsFormsPartC.Unit6
         {
             x = 100; y = 200; int size = 100;
 
-            Pen myPen = new Pen(Color.Red, 10);
+            Pen myPen = new Pen(Color.GreenYellow, 10);
 
             Point[] hexagon = new Point[]
             {
@@ -198,7 +198,7 @@ namespace WindowsFormsPartC.Unit6
             g.FillPolygon(Brushes.Yellow, hexagon);
 
             Font myFont = new Font("Courier", 30);
-            g.DrawString("Derek's Hexagon", myFont, Brushes.Red, 120, 320);
+            g.DrawString("Hamza's Hexagon", myFont, Brushes.Red, 120, 320);
         }
 
         private void quitForm(object sender, System.EventArgs e)
