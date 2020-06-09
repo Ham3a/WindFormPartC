@@ -20,12 +20,14 @@ namespace WindowsFormsPartC.Unit5
 
         public const string BACKGROUND_IMAGE_1 = "../../Images/Town and Sky/City1.wmf";
         public const string BACKGROUND_IMAGE_2 = "../../Images/Town and Sky/City2.wmf";
+        public const string BACKGROUND_IMAGE_3 = "../../Images/Town and Sky/City3.wmf";
 
-        private string background = BACKGROUND_IMAGE_2;
+        private string background = BACKGROUND_IMAGE_1;
 
         private int horizontalSpeed = 10;
 
-        private Animation animation = new Animation(4);
+        private Animation pigAnimation = new Animation(4);
+        private Animation copterAnimation = new Animation(4);
 
         public FlyMeForm()
         {
@@ -49,18 +51,25 @@ namespace WindowsFormsPartC.Unit5
             }
         }
 
-        private void updateCopter(object sender, EventArgs e)
+        private void updateAnimations(object sender, EventArgs e)
         {
-            copterPictureBox.Image = animation.GetNextImage();
+            updateAnimation(copterPictureBox, copterAnimation);
+            updateAnimation(pigPictureBox, pigAnimation);
 
-            copterPictureBox.Left += horizontalSpeed;
+        }
+
+        private void updateAnimation(PictureBox pictureBox, Animation animation)
+        {
+            pictureBox.Image = animation.GetNextImage();
+
+            pictureBox.Left += horizontalSpeed;
 
             // If the copter goes off the right hand side
 
-            if (copterPictureBox.Left > this.Width)
+            if (pictureBox.Left > this.Width)
             {
-                copterPictureBox.Top += VERTICAL_SPEED;
-                copterPictureBox.Left = -copterPictureBox.Width;
+                pictureBox.Top += VERTICAL_SPEED;
+                pictureBox.Left = -copterPictureBox.Width;
 
                 //Image image = Image.FromFile("../../Images/Town and Sky/City1.wmf");
 
@@ -68,15 +77,17 @@ namespace WindowsFormsPartC.Unit5
                 {
                     background = BACKGROUND_IMAGE_2;
                 }
-                else
+                else if (background == BACKGROUND_IMAGE_2)
+                {
+                    background = BACKGROUND_IMAGE_3;
+                }
+                else if (background == BACKGROUND_IMAGE_3)
                 {
                     background = BACKGROUND_IMAGE_1;
                 }
-
                 Bitmap bitmap = new Bitmap(background);
                 BackgroundImage = bitmap;
             }
-
         }
 
         private void changeSpeed(object sender, EventArgs e)
@@ -98,7 +109,8 @@ namespace WindowsFormsPartC.Unit5
         private void loadImages(object sender, EventArgs e)
         {
             string baseFileName = "../../Images/Copter/copter";
-            animation.LoadImages(baseFileName);
+            copterAnimation.LoadImages(baseFileName);
+            pigAnimation.LoadImages("../../Images/Pigs/Pig");
         }
     }
 }

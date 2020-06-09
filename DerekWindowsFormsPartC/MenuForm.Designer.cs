@@ -61,24 +61,25 @@
             // animationRadioButton
             // 
             this.animationRadioButton.AutoSize = true;
-            this.animationRadioButton.Checked = true;
             this.animationRadioButton.Location = new System.Drawing.Point(48, 51);
             this.animationRadioButton.Name = "animationRadioButton";
             this.animationRadioButton.Size = new System.Drawing.Size(408, 30);
             this.animationRadioButton.TabIndex = 2;
-            this.animationRadioButton.TabStop = true;
             this.animationRadioButton.Text = "Task 5.1 Butterfly and Horse Animation";
             this.animationRadioButton.UseVisualStyleBackColor = true;
             // 
             // flyMeRadioButton
             // 
             this.flyMeRadioButton.AutoSize = true;
+            this.flyMeRadioButton.Checked = true;
             this.flyMeRadioButton.Location = new System.Drawing.Point(48, 105);
             this.flyMeRadioButton.Name = "flyMeRadioButton";
             this.flyMeRadioButton.Size = new System.Drawing.Size(337, 30);
             this.flyMeRadioButton.TabIndex = 3;
+            this.flyMeRadioButton.TabStop = true;
             this.flyMeRadioButton.Text = "Task 5.3 Fly With Me Animation";
             this.flyMeRadioButton.UseVisualStyleBackColor = true;
+            this.flyMeRadioButton.CheckedChanged += new System.EventHandler(this.flyMeRadioButton_CheckedChanged);
             // 
             // quitButton
             // 
