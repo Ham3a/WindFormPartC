@@ -9,6 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HamzaWindowsFormsPartC.Unit6
+
+    ///<summary>
+    /// This code will build my house.
+    /// inside the house there will be 5 shapes to make the house
+    /// Author: Hamza Basharat
+    /// </summary>
 {
     public partial class HouseForm : Form
     {
@@ -54,6 +60,7 @@ namespace HamzaWindowsFormsPartC.Unit6
             g.DrawPolygon(myPen, hexagon);
             g.FillPolygon(Brushes.Yellow, hexagon);
 
+            /// I have also added text so that its more appealing to the eye. 
             Font myFont = new Font("Courier", 30);
             g.DrawString("Hamza's House", myFont, Brushes.Red, 120, 420);
         }
