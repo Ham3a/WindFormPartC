@@ -21,7 +21,7 @@ namespace WindowsFormsPartC.Unit6
     /// including rectangles, ellipses, polygons and lines.
     /// 
     /// Unit 6: Tasks 6.1 to 6.5
-    /// Hamza Basharat
+    /// Author: Hamza Basharat
     /// </summary>
     public partial class GraphicsForm : Form
     {
@@ -135,6 +135,8 @@ namespace WindowsFormsPartC.Unit6
 
         /// <summary>
         /// Task 6.1 Drawing 6 Strings
+        /// This is where the text "Hamza's Graphics Drawing" is displayed
+        /// This code chooses the colour, size and where the text will be displayed.
         /// </summary>
         private void drawStrings(Graphics g, int x, int y)
         {
@@ -151,6 +153,7 @@ namespace WindowsFormsPartC.Unit6
                 y = y + fontSize;
             }
         }
+
 
         private void drawRectangles(Graphics g, int x, int y)
         {
@@ -177,6 +180,9 @@ namespace WindowsFormsPartC.Unit6
 
         /// <summary>
         /// Task 6.3
+        /// in order to make the hexagon I had to give the mesurements in code
+        /// Then I had to double the size so the programme can resize to the required size.
+        /// Author: Hamza Basharat
         /// </summary>
         private void drawHexagon(Graphics g)
         {
