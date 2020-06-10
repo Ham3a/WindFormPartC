@@ -11,7 +11,7 @@ namespace WindowsFormsPartC.Unit5
     /// a butterfly.
     /// 
     /// Author      : Derek Peacock
-    /// Modified by : Student Name
+    /// Modified by : Hamza Basharat
     /// </summary>
     public partial class AnimationForm : Form
     {
@@ -54,8 +54,6 @@ namespace WindowsFormsPartC.Unit5
         /// Change the image in the picture box to the next image
         /// in the array with every animation timer click.  
         /// Cycle continuously.
-        /// 
-        /// FIND THE DELIBERATE ERROR!!!
         /// </summary>
         private void UpdateImage(object sender, EventArgs e)
         {
