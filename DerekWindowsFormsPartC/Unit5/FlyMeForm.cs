@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace WindowsFormsPartC.Unit5
 {
     /// <summary>
+    /// Author: Hamza Basharat
     /// This form shows an animation of a helicopter which will fly across
     /// and down the screen.
     /// </summary>
@@ -58,6 +59,15 @@ namespace WindowsFormsPartC.Unit5
 
         }
 
+        /// <summary>
+        /// In order to get the pig to move along side with the copter I had 
+        /// to change the single copter animation to "Aminmations" for both the copter and the pig
+        /// this is so they both move togther side by side and not one after the other.
+        /// </summary>
+        
+        
+         ///<param name="pictureBox"></param>
+        /// <param name="animation"></param>
         private void updateAnimation(PictureBox pictureBox, Animation animation)
         {
             pictureBox.Image = animation.GetNextImage();
